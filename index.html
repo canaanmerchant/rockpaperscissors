@@ -13,13 +13,60 @@ function computerPlay(){
     //code code code
 }
 
+function player_selection{
+    prompt "Welcome. Please enter 'r', 'p', or 's'. ";
+    //log what is entered 
+}
 function rPS(computer_selection, player_selection){
 
-	let computer_selection = computerPlay
-	let player_selection = prompt
+    //if player enters something other than r,p,s then print "try again"
 
-	
+	//if computer == rock and player == rock print "It's a tie"
+    //code code code 
 
+    if (computerSelection === playerSelecion) {
+        console.log('Tie')
+        console.log(playerName + ' Score : ' + playerScore + ' || Computer Score : ' + computerScore)  
+        return 'Tie';
+
+   
+    // if computer == rock and player == paper print "paper/player wins"
+    //code code code
+
+    if (computerSelection === 'r') {
+        if (playerSelecion === 'p') {
+            playerScore ++;
+            console.log(playerName + ' is the Winner! r<p')
+            console.log(playerName + ' Score : ' + playerScore + ' || Computer Score : ' + computerScore) 
+            return playerName + ' is the Winner! r<p';
+         }else {
+             computerScore ++;
+             console.log('Computer is the Winner! r>s')
+             console.log(playerName + ' Score : ' + playerScore + ' || Computer Score : ' + computerScore) 
+             return 'Computer is the Winner! r>s';
+
+    // if computer == rock and player == scissors print "computer wins!"
+    //code code code
+
+    
+
+    //if computer == paper and player == paper print "it's a tie"
+	//code code code
+
+    //if computer == paper and player == rock print "computer wins!"
+    //code code code
+
+    //if computer == paper and player == scissors print "player wins!"
+    //code code code
+
+    //if computer == scissors and player == rock print "player wins!"
+    //code code code
+
+    // if computer == scissors and player == scissors "it's a tie!"
+    //code code code
+
+    //if computer == scissors and player == paper "computer wins"
+    //code code code 
 
 
     //code code code
